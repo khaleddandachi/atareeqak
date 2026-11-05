@@ -1,0 +1,144 @@
+/* ==========================================================================
+   DESIGN TOKENS — Single source of truth derived from the official "عَ طريقك"
+   logo (#395651, #C6D3D8, #FFFFFF, #F1A43A, #DD4537) & extended into a
+   complete light + dark theme system with fluid typography and 8px spacing.
+   ========================================================================== */
+
+:root {
+  /* Brand palette (from official logo) */
+  --pine: #395651;
+  --pine-dark: #1F2F2C;
+  --pine-deeper: #131E1C;
+  --pine-light: #5E8078;
+  --pine-tint: #D7E3E0;
+
+  --mist: #C6D3D8;
+  --mist-light: #E6EDEF;
+  --mist-subtle: #F1F5F6;
+
+  --orange: #F1A43A;
+  --orange-hover: #DF8E1F;
+  --orange-soft: #FDEBD0;
+
+  --tomato: #DD4537;
+  --tomato-hover: #C23326;
+  --tomato-soft: #FADAD6;
+
+  --cream: #FBF7EF;
+  --sand: #F2E9D8;
+  --olive: #8A9A3B;
+  --olive-dark: #5E6B22;
+  --olive-soft: #E9E2C4;
+  --gold: #D9A441;
+
+  --whatsapp: #1FA855;
+
+  /* Semantic surfaces & text (Light theme default) */
+  --bg: #F6F4EE;
+  --bg-alt: #E6EDEF;
+  --surface: #FFFFFF;
+  --surface-2: #FBF7EF;
+  --surface-3: #E6EDEF;
+  --surface-glass: rgba(255, 255, 255, 0.88);
+
+  --ink: #182623;
+  --ink-2: #395651;
+  --ink-muted: #516A65;
+  --ink-on-pine: #FBF7EF;
+
+  --border: rgba(31, 47, 44, 0.12);
+  --border-strong: rgba(31, 47, 44, 0.24);
+
+  /* Consistent elevation tokens */
+  --shadow-xs: 0 2px 6px rgba(24, 38, 35, 0.05);
+  --shadow-sm: 0 6px 18px rgba(24, 38, 35, 0.07);
+  --shadow-md: 0 14px 34px rgba(24, 38, 35, 0.10);
+  --shadow-lg: 0 26px 60px rgba(24, 38, 35, 0.16);
+  --shadow-pop: 0 14px 32px rgba(241, 164, 58, 0.28);
+
+  /* Typography — Arabic display & body */
+  --font-display: 'Rubik', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Rubik', system-ui, sans-serif;
+  --font-playful: 'Lalezar', 'Rubik', sans-serif;
+
+  /* Fluid type scale (body never below 16px / 1rem on mobile) */
+  --fs-xs: clamp(0.8125rem, 0.79rem + 0.15vw, 0.875rem);
+  --fs-sm: clamp(0.9rem, 0.87rem + 0.18vw, 0.98rem);
+  --fs-base: clamp(1rem, 0.97rem + 0.22vw, 1.08rem);
+  --fs-md: clamp(1.125rem, 1.05rem + 0.35vw, 1.28rem);
+  --fs-lg: clamp(1.3rem, 1.16rem + 0.65vw, 1.68rem);
+  --fs-xl: clamp(1.6rem, 1.32rem + 1.35vw, 2.45rem);
+  --fs-2xl: clamp(1.85rem, 1.45rem + 2.4vw, 3.4rem);
+  --fs-hero: clamp(3.2rem, 1.8rem + 7.2vw, 8.2rem);
+
+  /* Radii tokens */
+  --r-xs: 10px;
+  --r-sm: 14px;
+  --r-md: 20px;
+  --r-lg: 26px;
+  --r-xl: 34px;
+  --r-pill: 999px;
+
+  /* 8px base spacing scale */
+  --s-1: 0.25rem;  /* 4px */
+  --s-2: 0.5rem;   /* 8px */
+  --s-3: 0.75rem;  /* 12px */
+  --s-4: 1rem;     /* 16px */
+  --s-5: 1.5rem;   /* 24px */
+  --s-6: 2rem;     /* 32px */
+  --s-7: 3rem;     /* 48px */
+  --s-8: 4rem;     /* 64px */
+  --s-9: clamp(3.5rem, 8vw, 7.5rem); /* 56px -> 120px */
+
+  /* Shared easing & durations */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 180ms;
+  --dur-med: 320ms;
+  --dur-slow: 600ms;
+
+  /* Layout & safe-area dimensions */
+  --wrap: 1320px;
+  --pad-inline: clamp(16px, 5vw, 48px);
+  --header-h: 56px;
+  --sticky-cats-h: 52px;
+  --bottom-nav-h: 68px;
+  --tap-min: 44px;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --header-h: 72px;
+    --sticky-cats-h: 54px;
+  }
+}
+
+/* ============================ DARK THEME ============================ */
+html[data-theme="dark"] {
+  --bg: #0E1715;
+  --bg-alt: #13201D;
+  --surface: #172623;
+  --surface-2: #1C2E2A;
+  --surface-3: #223833;
+  --surface-glass: rgba(23, 38, 35, 0.90);
+
+  --ink: #F2F6F5;
+  --ink-2: #C6D3D8;
+  --ink-muted: #95ACA7;
+  --ink-on-pine: #FBF7EF;
+
+  --pine-tint: #233834;
+  --mist-light: #1B2B28;
+  --mist-subtle: #152320;
+  --orange-soft: rgba(241, 164, 58, 0.18);
+  --tomato-soft: rgba(221, 69, 55, 0.20);
+  --olive-soft: rgba(138, 154, 59, 0.20);
+
+  --border: rgba(198, 211, 216, 0.14);
+  --border-strong: rgba(198, 211, 216, 0.26);
+
+  --shadow-xs: 0 2px 6px rgba(0, 0, 0, 0.35);
+  --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.42);
+  --shadow-md: 0 16px 38px rgba(0, 0, 0, 0.50);
+  --shadow-lg: 0 28px 68px rgba(0, 0, 0, 0.65);
+}
