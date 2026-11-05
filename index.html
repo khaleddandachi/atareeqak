@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>عَ طريقك — سوبرماركت طرابلس والشمال | توصيل خلال 15 دقيقة</title>
+  <meta name="description" content="سوبرماركت عَ طريقك في طرابلس والشمال: مونة لبنانية، قهوة ومتّة، عروض جملة، ألبان وأجبان ومجمدات. أسعار واضحة بالليرة والدولار وتوصيل سريع من 7 الصبح لنص الليل." />
+  <meta name="theme-color" content="#395651" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#101a18" media="(prefers-color-scheme: dark)" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="canonical" href="https://atareeqak.example/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_LB" />
+  <meta property="og:site_name" content="عَ طريقك" />
+  <meta property="og:title" content="عَ طريقك — السوبرماركت يللي بيركض لعندك" />
+  <meta property="og:description" content="كل غراض البيت بتوصلك على طريقك خلال 15 دقيقة في طرابلس والشمال." />
+  <meta property="og:image" content="public/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="عَ طريقك — سوبرماركت طرابلس والشمال" />
+  <meta name="twitter:description" content="مونة، قهوة، عروض جملة وتوصيل سريع. أسعار بالليرة والدولار." />
+  <meta name="twitter:image" content="public/assets/og-image.jpg" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="public/icons/favicon-32.png" />
+  <link rel="apple-touch-icon" href="public/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="public/manifest.webmanifest" />
+
+  <!-- Fonts: Rubik (display 700–900), IBM Plex Sans Arabic (body), Lalezar (playful accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Lalezar&family=Rubik:wght@500;700;800;900&display=swap" />
+
+  <!-- Theme before paint -->
+  <script>
+    (function () {
+      try {
+        var s = JSON.parse(localStorage.getItem("atareeqak:store") || "null");
+        var t = s && s.theme;
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+
+  <link rel="stylesheet" href="src/styles/tokens.css" />
+  <link rel="stylesheet" href="src/styles/base.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <link rel="stylesheet" href="src/styles/sections.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["GroceryStore", "LocalBusiness"],
+    "name": "عَ طريقك",
+    "alternateName": "A' Tareeqak Supermarket",
+    "description": "سوبرماركت وتوصيل سريع في طرابلس والشمال، لبنان.",
+    "image": "public/assets/logo.jpg",
+    "logo": "public/assets/logo.jpg",
+    "telephone": "+96106220890",
+    "priceRange": "$",
+    "currenciesAccepted": "LBP, USD",
+    "paymentAccepted": "Cash, Whish Money, Credit Card (POS)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "شارع المعرض",
+      "addressLocality": "طرابلس",
+      "addressRegion": "الشمال",
+      "addressCountry": "LB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 34.4367, "longitude": 35.8497 },
+    "areaServed": ["الميناء", "التل", "الزاهرية", "المعرض", "الضم والفرز", "أبي سمراء", "القبة", "البحصاص", "القلمون"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:59"
+    }]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== LIVE STATUS BAR ===================== -->
+  <div class="statusbar" role="status" aria-live="off">
+    <div class="statusbar-in">
+      <span class="status-pill" id="status-pill"><span class="live-dot"></span><span id="status-label">مفتوح الآن</span></span>
+      <span class="status-count" id="status-count-wrap"><span id="status-count-label">يغلق بعد</span> <b class="tnum" id="status-count">--:--:--</b></span>
+      <span class="status-hours"><span data-icon="clock"></span> ساعات العمل: نفتح 7:00 صباحاً ونغلق 12:00 منتصف الليل</span>
+    </div>
+  </div>
+
+  <!-- ===================== STICKY HEADER ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="header-in">
+      <a href="#/" class="brand" aria-label="عَ طريقك — الصفحة الرئيسية" data-nav="home">
+        <img src="public/assets/logo.jpg" alt="" width="40" height="40" class="brand-logo" />
+        <span class="brand-word">عَ طريقك<small>طرابلس والشمال</small></span>
+      </a>
+
+      <nav class="header-nav" aria-label="الأقسام الرئيسية">
+        <a href="#/catalog" data-nav="catalog">كل الأصناف</a>
+        <a href="#deals" data-scroll>العروض</a>
+        <a href="#radar" data-scroll>التوصيل</a>
+        <a href="#mouneh" data-scroll>المونة</a>
+        <a href="#coffee" data-scroll>القهوة</a>
+        <a href="#wholesale" data-scroll>الجملة</a>
+      </nav>
+
+      <button class="search-trigger" type="button" data-open-search aria-label="ابحث عن منتج (اختصار: /)">
+        <span data-icon="search"></span>
+        <span class="st-text">ابحث عن لبنة، خبز، قهوة…</span>
+        <kbd>/</kbd>
+      </button>
+
+      <div class="header-actions">
+        <div class="cur-toggle" role="radiogroup" aria-label="عملة الأسعار">
+          <button type="button" role="radio" data-cur="LBP" aria-checked="true">ل.ل.</button>
+          <button type="button" role="radio" data-cur="USD" aria-checked="false">$</button>
+          <span class="cur-thumb" aria-hidden="true"></span>
+        </div>
+        <button class="icon-btn" type="button" id="theme-toggle" aria-label="تبديل الوضع الليلي">
+          <span class="theme-sun" data-icon="sun"></span><span class="theme-moon" data-icon="moon"></span>
+        </button>
+        <a class="icon-btn hide-sm" href="#/catalog?wish=1" aria-label="المفضلة" data-nav="catalog">
+          <span data-icon="heart"></span><span class="mini-badge" id="wish-count" hidden>0</span>
+        </a>
+        <button class="cart-btn" type="button" id="cart-btn" aria-label="سلة المشتريات" aria-controls="cart-drawer" aria-expanded="false">
+          <span class="cart-basket" id="header-basket"></span>
+          <span class="cart-count tnum" id="cart-count">0</span>
+          <span class="cart-total tnum hide-sm" id="cart-total">0 ل.ل.</span>
+        </button>
+      </div>
+    </div>
+    <div class="route-progress" aria-hidden="true"><span id="route-progress-bar"></span><i id="route-progress-runner"></i></div>
+    <!-- Sticky horizontal category strip for instant thumb navigation -->
+    <div class="sticky-cats" aria-label="تصفح الأقسام السريع">
+      <div class="sticky-cats-track" id="sticky-cats-track"></div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ======================== HOME VIEW ======================== -->
+    <div class="view view-home" id="view-home" data-view="home">
+
+      <!-- HERO (Preserved opening concept) -->
+      <section class="hero" id="top" aria-labelledby="hero-title" data-bg="mist">
+        <div class="hero-blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+        <div class="hero-orbit" id="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-in">
+          <p class="hero-kicker">
+            <span class="pill pill-live"><span class="live-dot"></span><span id="hero-status">مفتوح الآن</span></span>
+            <span class="pill pill-orange"><span data-icon="bolt"></span> توصيل خلال 15 دقيقة</span>
+          </p>
+
+          <div class="hero-lockup">
+            <button class="ht-mascot" type="button" id="hero-mascot" aria-label="اضغط على حرف العين الراكض، في مفاجأة!"></button>
+            <h1 class="ht-word" id="hero-title"><span class="sr-only">عَ </span>طريقك<span class="sr-only"> — سوبرماركت طرابلس والشمال</span></h1>
+            <div class="ht-basket" id="hero-basket" aria-hidden="true"></div>
+          </div>
+
+          <p class="hero-line" data-split>كل غراض البيت، <span class="squiggle">بتركض لعندك</span> قبل ما تبرد القهوة.</p>
+          <p class="hero-sub">مونة الضيعة، قهوة الصبح، خبز طازة وعروض جملة… أسعار واضحة بالليرة والدولار، وتوصيل لكل طرابلس والشمال.</p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="#/catalog" data-magnetic data-nav="catalog"><span>ابدأ التسوق</span><span data-icon="arrowL"></span></a>
+            <a class="btn btn-ghost btn-lg" href="#radar" data-scroll data-magnetic><span data-icon="location"></span><span>اختر منطقتك</span></a>
+          </div>
+
+          <ul class="hero-facts" aria-label="معلومات سريعة">
+            <li><b class="tnum">15</b><span>دقيقة توصيل</span></li>
+            <li><b class="tnum">89,900</b><span>ل.ل. لكل 1$</span></li>
+            <li><b class="tnum" id="fact-count">36</b><span>صنف على الرف</span></li>
+          </ul>
+        </div>
+        <a class="scroll-cue" href="#deals" data-scroll><span>كمّل الطريق</span><i></i></a>
+      </section>
+
+      <!-- CATEGORY TICKER -->
+      <div class="ticker" aria-label="الأقسام">
+        <div class="ticker-track" id="ticker-track"></div>
+      </div>
+
+      <!-- 1. SAVING DEALS -->
+      <section class="sec deals" id="deals" aria-labelledby="deals-title" data-bg="cream" data-stop="عروض التوفير">
+        <div class="wrap">
+          <header class="sec-head split-row">
+            <div>
+              <p class="eyebrow"><span data-icon="tag"></span> المحطة 1 · عروض اليوم</p>
+              <h2 id="deals-title" data-split>حزم التوفير <span class="squiggle">اليومية</span></h2>
+              <p class="sec-lead">حزم عائلية مختارة بأسعار مخفضة. العدّاد حقيقي ومرتبط بوقت انتهاء العرض.</p>
+            </div>
+            <a href="#/catalog?sale=1" class="btn btn-ghost" data-nav="catalog"><span>كل العروض</span><span data-icon="arrowL"></span></a>
+          </header>
+          <div class="deals-row snap-row" id="deals-row"></div>
+        </div>
+        <div class="wave-divider" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0 24c240-28 480 28 720 0s480-28 720 0v24H0Z"/></svg></div>
+      </section>
+
+      <!-- 2. DELIVERY RADAR -->
+      <section class="sec radar" id="radar" aria-labelledby="radar-title" data-bg="mist" data-stop="رادار التوصيل">
+        <div class="wrap">
+          <header class="sec-head split-row">
+            <div>
+              <p class="eyebrow"><span data-icon="route"></span> المحطة 2 · التوصيل السريع</p>
+              <h2 id="radar-title" data-split>وين بدنا <span class="squiggle">نوصلك؟</span></h2>
+              <p class="sec-lead">اضغط على منطقتك عالخريطة أو من القائمة، وشوف مسار الموتوسيكل ووقت الوصول ورسوم التوصيل فوراً.</p>
+            </div>
+            <div class="radar-live-pill" id="radar-live-pill">
+              <span class="live-dot"></span>
+              <span id="radar-live-text">مفتوح الآن</span>
+              <span class="radar-live-sep">·</span>
+              <b class="tnum" id="radar-live-timer">--:--:--</b>
+            </div>
+          </header>
+
+          <div class="radar-grid">
+            <div class="radar-map-wrap">
+              <div class="radar-map" id="radar-map"></div>
+            </div>
+            <div class="radar-panel">
+              <div class="zone-list" role="radiogroup" aria-label="مناطق التوصيل في طرابلس والشمال" id="zone-list"></div>
+              <div class="zone-card" id="zone-card" aria-live="polite">
+                <div class="zone-card-head">
+                  <span class="zone-card-icon" data-icon="scooter"></span>
+                  <div>
+                    <small>المنطقة المختارة للتوصيل</small>
+                    <h3 id="zone-name">طرابلس — الميناء والكورنيش البحري</h3>
+                  </div>
+                </div>
+                <div class="zone-metrics">
+                  <div><small>رسوم التوصيل</small><b class="tnum" id="zone-fee">—</b><span class="tnum" id="zone-fee-alt"></span></div>
+                  <div><small>الوقت المتوقع</small><b class="tnum" id="zone-eta">—</b><span>من فرع المعرض</span></div>
+                  <div><small>توصيل مجاني</small><b class="tnum">فوق 25$</b><span>تلقائياً بالسلة</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave-divider wave-to-surface" aria-hidden="true"><svg viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0 18c300 30 600-24 900 6s360 12 540-6v30H0Z"/></svg></div>
+      </section>
+
+      <!-- 3. BEST SELLERS -->
+      <section class="sec best" id="best" aria-labelledby="best-title" data-bg="paper" data-stop="الأكثر مبيعاً">
+        <div class="wrap">
+          <header class="sec-head split-row">
+            <div>
+              <p class="eyebrow"><span data-icon="flame"></span> المحطة 3 · المفضلة بطرابلس</p>
+              <h2 id="best-title" data-split>الأكثر <span class="squiggle">طلباً</span> هالأسبوع</h2>
+              <p class="sec-lead">الأصناف يللي بيطلبوها جيراننا كل يوم في الميناء، التل، المعرض والضم والفرز.</p>
+            </div>
+            <div class="carousel-controls">
+              <button type="button" class="icon-btn" data-scroll-track="best-track" data-dir="prev" aria-label="السابق"><span data-icon="chevR"></span></button>
+              <button type="button" class="icon-btn" data-scroll-track="best-track" data-dir="next" aria-label="التالي"><span data-icon="chevL"></span></button>
+              <a href="#/catalog" class="btn btn-soft" data-nav="catalog"><span>كل الأصناف</span><span data-icon="arrowL"></span></a>
+            </div>
+          </header>
+          <div class="best-track snap-row" id="best-track" tabindex="0" aria-label="المنتجات الأكثر مبيعاً"></div>
+        </div>
+      </section>
+
+      <!-- 4. LEBANESE MOUNEH -->
+      <section class="sec mouneh" id="mouneh" aria-labelledby="mouneh-title" data-bg="cream" data-stop="المونة اللبنانية">
+        <div class="wrap">
+          <div class="block block-cream">
+            <header class="sec-head split-row">
+              <div>
+                <p class="eyebrow olive"><span data-icon="leaf"></span> المحطة 4 · مونة البيت اللبناني</p>
+                <h2 id="mouneh-title" data-split>مونة <span class="squiggle olive">الضيعة</span> على رفّك</h2>
+                <p class="sec-lead">مكدوس بالجوز، زعتر جبلي بالسمسم، كشك بقري وزيت زيتون الكورة البكر — معبّاية ومختومة.</p>
+              </div>
+              <a href="#/catalog?cat=mouneh" class="btn btn-ghost" data-nav="catalog"><span>رف المونة كامل</span><span data-icon="arrowL"></span></a>
+            </header>
+
+            <div class="bento-showcase" id="mouneh-bento">
+              <aside class="bento-feature feature-mouneh">
+                <span class="pill pill-olive">من الضيعة لباب بيتك</span>
+                <h3>طعم الخابية والمرطبان الأصلي</h3>
+                <p>منختار المونة من مواسم الكورة وعكار والبقاع، ومنوصّلها لعندك بنفس النكهة البلدية.</p>
+                <ol class="story-strip" aria-label="رحلة المونة">
+                  <li><span data-icon="leaf"></span><div><b>قطاف بلدي</b><small>بساتين الكورة وعكار</small></div></li>
+                  <li><span data-icon="jar"></span><div><b>تحضير بيتي</b><small>على الطريقة اللبنانية</small></div></li>
+                  <li><span data-icon="shield"></span><div><b>ختم محكم</b><small>عبوات نظيفة ومضمونة</small></div></li>
+                  <li><span data-icon="scooter"></span><div><b>توصيل سريع</b><small>خلال 15 دقيقة</small></div></li>
+                </ol>
+              </aside>
+              <div class="bento-items snap-row" id="mouneh-shelves"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. COFFEE & TEA -->
+      <section class="sec coffee" id="coffee" aria-labelledby="coffee-title" data-bg="coffee" data-stop="ركن القهوة">
+        <div class="wrap">
+          <div class="block block-coffee" id="coffee-block" data-mode="morning">
+            <div class="beans" id="bean-field" aria-hidden="true"></div>
+            <header class="sec-head split-row coffee-head">
+              <div>
+                <p class="eyebrow gold"><span data-icon="cup"></span> المحطة 5 · مزاج الصبح والمسا</p>
+                <h2 id="coffee-title" data-split>ركن <span class="squiggle">القهوة</span> والشاي والمتّة</h2>
+                <p class="coffee-quote" id="coffee-quote">«فنجان بالهيل والجيران عالبلكون»</p>
+              </div>
+              <div class="mode-toggle" role="radiogroup" aria-label="مزاج الركن">
+                <button type="button" role="radio" data-mode="morning" aria-checked="true"><span data-icon="sun"></span><span>قهوة الصبح</span></button>
+                <button type="button" role="radio" data-mode="evening" aria-checked="false"><span data-icon="moon"></span><span>سهرة المسا</span></button>
+              </div>
+            </header>
+
+            <div class="bento-showcase coffee-bento">
+              <aside class="bento-feature feature-coffee" aria-hidden="true">
+                <div class="steam" id="coffee-steam"></div>
+                <div class="coffee-art" id="coffee-art"></div>
+                <p class="feature-caption">تحميص طازج بالهيل الأخضر، متّة الخارطة، وشاي سيلاني فاخر.</p>
+              </aside>
+              <div class="bento-items snap-row" id="coffee-menu"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. WHOLESALE BENTO -->
+      <section class="sec wholesale" id="wholesale" aria-labelledby="ws-title" data-bg="sand" data-stop="عروض الجملة">
+        <div class="wrap">
+          <header class="sec-head split-row">
+            <div>
+              <p class="eyebrow tomato"><span data-icon="box"></span> المحطة 6 · صناديق وطُرود عائلية</p>
+              <h2 id="ws-title" data-split>اشتري <span class="squiggle">بالجملة</span>، وفّر عالآخر</h2>
+              <p class="sec-lead">صناديق مشروبات، كراتين حليب، طرود مياه وشوالات أرز بسعر الجملة مباشرة لبيتك.</p>
+            </div>
+            <a href="#/catalog?cat=wholesale" class="btn btn-ghost" data-nav="catalog"><span>كل عروض الجملة</span><span data-icon="arrowL"></span></a>
+          </header>
+          <div class="bento-showcase" id="ws-bento"></div>
+        </div>
+      </section>
+
+      <!-- 7. SHOP BY CATEGORY -->
+      <section class="sec cats" id="categories" aria-labelledby="cats-title" data-bg="paper" data-stop="الأقسام">
+        <div class="wrap">
+          <header class="sec-head split-row">
+            <div>
+              <p class="eyebrow"><span data-icon="grid"></span> المحطة 7 · كل رفوف السوبرماركت</p>
+              <h2 id="cats-title" data-split>تسوّق حسب <span class="squiggle">القسم</span></h2>
+            </div>
+            <a href="#/catalog" class="btn btn-primary" data-nav="catalog"><span>افتح الكتالوج الكامل</span><span data-icon="arrowL"></span></a>
+          </header>
+          <div class="cat-mosaic" id="cat-mosaic"></div>
+        </div>
+      </section>
+
+      <!-- 8. WHY A' TAREEQAK -->
+      <section class="sec why" id="why" aria-labelledby="why-title" data-bg="mist" data-stop="ليش عَ طريقك">
+        <div class="wrap">
+          <header class="sec-head center">
+            <p class="eyebrow"><span data-icon="sparkle"></span> المحطة 8 · وعدنا لأهل طرابلس</p>
+            <h2 id="why-title" data-split>ليش <span class="squiggle">عَ طريقك</span>؟</h2>
+          </header>
+          <div class="why-grid">
+            <article class="why-card" data-reveal>
+              <div class="why-anim anim-clock" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="54" r="34" class="wa-face"/><rect x="44" y="8" width="12" height="10" rx="3" class="wa-acc"/><line x1="50" y1="54" x2="50" y2="30" class="wa-hand"/><circle cx="50" cy="54" r="5" class="wa-acc"/></svg></div>
+              <h3>سرعة بتفاجئك</h3><p>معدل التوصيل 15 دقيقة بطرابلس. الموتوسيكل بيطلع أول ما تأكّد.</p>
+            </article>
+            <article class="why-card" data-reveal>
+              <div class="why-anim anim-leaf" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 92V50" class="wa-stem"/><path d="M50 60C30 60 22 44 24 30c16 0 26 10 26 30Z" class="wa-leaf l1"/><path d="M50 50c0-20 12-30 28-30 2 16-8 30-28 30Z" class="wa-leaf l2"/></svg></div>
+              <h3>طازة كل يوم</h3><p>خبز الصبح، ألبان مبرّدة ومجمدات بتوصل مثلّجة تماماً.</p>
+            </article>
+            <article class="why-card" data-reveal>
+              <div class="why-anim anim-tag" aria-hidden="true"><svg viewBox="0 0 100 100"><g class="wa-swing"><path d="M28 30h34l18 20-18 20H28Z" class="wa-tagb"/><circle cx="38" cy="50" r="5" class="wa-hole"/><path d="M50 44h16M50 56h16" class="wa-eq"/></g><path d="M10 10l18 20" class="wa-string"/></svg></div>
+              <h3>أسعار شفّافة</h3><p>كل سعر بالليرة والدولار على سعر ثابت 89,900. ولا مفاجأة عالباب.</p>
+            </article>
+            <article class="why-card" data-reveal>
+              <div class="why-anim anim-pay" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="16" y="30" width="56" height="36" rx="7" class="wa-card c1"/><rect x="28" y="40" width="56" height="36" rx="7" class="wa-card c2"/><path d="M28 50h56" class="wa-stripe"/></svg></div>
+              <h3>ادفع متل ما بدك</h3><p>كاش ليرة أو دولار، ويش موني، أو بطاقة على جهاز POS عالباب.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. REVIEWS (Marquee on Desktop, Snap Carousel on Mobile) -->
+      <section class="sec reviews" id="reviews" aria-labelledby="rev-title" data-bg="paper" data-stop="آراء الجيران">
+        <div class="wrap">
+          <header class="sec-head center">
+            <p class="eyebrow"><span data-icon="heart"></span> ثقة البيوت الطرابلسية</p>
+            <h2 id="rev-title" data-split>شو بيقولوا <span class="squiggle">الجيران</span></h2>
+          </header>
+        </div>
+        <div class="reviews-stage wrap-mobile">
+          <div class="marquee" id="rev-marquee-1"></div>
+          <div class="marquee reverse hide-sm" id="rev-marquee-2"></div>
+        </div>
+      </section>
+
+      <!-- 10. FAQ ACCORDION -->
+      <section class="sec faq" id="faq" aria-labelledby="faq-title" data-bg="cream" data-stop="الأسئلة الشائعة">
+        <div class="wrap faq-wrap">
+          <header class="sec-head center">
+            <p class="eyebrow"><span data-icon="shield"></span> كل شي واضح</p>
+            <h2 id="faq-title" data-split>أسئلة <span class="squiggle">بتهمّك</span></h2>
+            <p class="sec-lead">إجابات سريعة عن التوصيل، الدفع، وساعات العمل في طرابلس والشمال.</p>
+          </header>
+          <div class="faq-list" id="faq-list">
+            <details class="faq-item" open>
+              <summary><span>قديش بياخد وقت التوصيل بطرابلس؟</span><span class="faq-ico" data-icon="chevD"></span></summary>
+              <div class="faq-body"><p>معدل التوصيل بين <strong>14 و20 دقيقة</strong> داخل أحياء طرابلس (الميناء، المعرض، الضم والفرز، التل، الزاهرية، أبي سمراء) وحوالي 20–25 دقيقة للبحصاص والقلمون ومدخل الكورة.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span>شو هو الحد الأدنى للطلب وكيف بحصل على توصيل مجاني؟</span><span class="faq-ico" data-icon="chevD"></span></summary>
+              <div class="faq-body"><p>ما في حد أدنى معقّد — فيك تطلب أي غرض ناقصك! وإذا وصلت سلتك لـ <strong>25$ أو أكثر</strong>، بصير التوصيل <strong>مجاني بالكامل</strong> تلقائياً.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span>كيف بدفع؟ وهل السعر بالليرة ثابت؟</span><span class="faq-ico" data-icon="chevD"></span></summary>
+              <div class="faq-body"><p>سعر الصرف عنّا واضح ومثبّت على <strong>1$ = 89,900 ل.ل.</strong> فيك تدفع عند الاستلام كاش بالليرة أو بالدولار، أو عبر <strong>ويش موني (Whish Money)</strong>، أو ببطاقتك المصرفية عبر جهاز POS مع الشوفير.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary><span>شو هي ساعات العمل؟ وكيف بتأكد الطلبية؟</span><span class="faq-ico" data-icon="chevD"></span></summary>
+              <div class="faq-body"><p>نفتح يومياً من <strong>7:00 صباحاً حتى 12:00 منتصف الليل</strong> بتوقيت بيروت. لما تضغط «أرسل الطلب على واتساب» بتفتح محادثة جاهزة فيها فاتورتك المفصّلة وتأكيد فوري من فريقنا.</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================== CATALOG VIEW ======================== -->
+    <div class="view view-catalog" id="view-catalog" data-view="catalog" hidden>
+      <div class="wrap">
+        <div class="cat-head">
+          <nav class="crumbs" aria-label="مسار التصفح"><a href="#/" data-nav="home">الرئيسية</a><span aria-hidden="true">/</span><span id="crumb-current">كل الأصناف</span></nav>
+          <div class="cat-head-row">
+            <h1 id="catalog-title">كل الأصناف</h1>
+            <button type="button" class="btn btn-soft" id="reorder-btn" hidden><span data-icon="refresh"></span><span>اطلب طلبيتك السابقة</span></button>
+          </div>
+          <p class="cat-count" id="catalog-count" aria-live="polite"></p>
+        </div>
+        <div class="chip-row" id="cat-chips" role="tablist" aria-label="الأقسام"></div>
+        <div class="cat-layout">
+          <div class="scrim" id="filters-scrim" hidden></div>
+          <aside class="filters" id="filters" aria-label="الفلاتر">
+            <div class="sheet-handle show-sm" aria-hidden="true"><span></span></div>
+            <div class="filters-head"><h2>فلترة وترتيب</h2><button type="button" class="icon-btn" data-close-filters aria-label="إغلاق الفلاتر"><span data-icon="close"></span></button></div>
+            <fieldset class="f-group">
+              <legend>السعر الأقصى</legend>
+              <div class="range" id="price-range">
+                <input type="range" id="price-min" min="0" step="0.5" aria-label="أدنى سعر" />
+                <input type="range" id="price-max" min="0" step="0.5" aria-label="أعلى سعر" />
+              </div>
+              <p class="range-vals tnum"><span id="price-min-val"></span><span id="price-max-val"></span></p>
+            </fieldset>
+            <fieldset class="f-group">
+              <legend>خيارات سريعة</legend>
+              <label class="switch"><input type="checkbox" id="f-sale" /><span>عليه خصم فقط</span></label>
+              <label class="switch"><input type="checkbox" id="f-wish" /><span>المفضلة فقط</span></label>
+            </fieldset>
+            <fieldset class="f-group">
+              <legend>الماركة</legend>
+              <div class="brand-list" id="brand-list"></div>
+            </fieldset>
+            <div class="filters-foot">
+              <button type="button" class="btn btn-ghost btn-block" id="f-reset">مسح الكل</button>
+              <button type="button" class="btn btn-primary btn-block show-sm" data-close-filters>عرض النتائج</button>
+            </div>
+          </aside>
+          <div class="cat-main">
+            <div class="cat-toolbar">
+              <button type="button" class="btn btn-soft show-sm" id="open-filters"><span data-icon="filter"></span><span>فلترة</span></button>
+              <div class="active-chips" id="active-chips"></div>
+              <label class="sort"><span data-icon="sort"></span><span class="sr-only">ترتيب حسب</span>
+                <select id="sort-select" aria-label="ترتيب الأصناف">
+                  <option value="popular">الأكثر شعبية</option>
+                  <option value="rating">الأعلى تقييماً</option>
+                  <option value="price-asc">السعر: من الأقل</option>
+                  <option value="price-desc">السعر: من الأعلى</option>
+                  <option value="discount">أكبر خصم</option>
+                </select>
+              </label>
+            </div>
+            <div class="grid" id="catalog-grid" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================== PRODUCT VIEW ======================== -->
+    <div class="view view-product" id="view-product" data-view="product" hidden></div>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer" id="footer" data-bg="pine">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="f-col f-brand">
+          <div class="f-brand-row">
+            <img src="public/assets/logo.jpg" alt="شعار عَ طريقك" width="64" height="64" loading="lazy" class="f-logo" />
+            <div>
+              <strong class="f-brand-name">عَ طريقك</strong>
+              <small class="f-brand-sub">سوبرماركت طرابلس والشمال</small>
+            </div>
+          </div>
+          <p>السوبرماركت يللي بيركض لعندك. من الميناء للقلمون، غراضك على طريقك خلال دقائق.</p>
+          <div class="f-cta-row">
+            <a class="btn btn-wa" id="footer-wa" href="#" target="_blank" rel="noopener"><span data-icon="whatsapp"></span><span>اطلب عبر واتساب</span></a>
+            <a class="btn btn-ghost-light tnum" href="tel:+96106220890" dir="ltr"><span data-icon="phone"></span><span>+961 6 220 890</span></a>
+          </div>
+        </div>
+
+        <details class="f-col f-acc" open>
+          <summary class="f-title"><span>تسوّق الأقسام</span><span class="f-acc-ico" data-icon="chevD"></span></summary>
+          <ul class="f-links">
+            <li><a href="#/catalog?cat=mouneh" data-nav="catalog">المونة اللبنانية</a></li>
+            <li><a href="#/catalog?cat=hot-beverages" data-nav="catalog">القهوة والشاي والمتّة</a></li>
+            <li><a href="#/catalog?cat=wholesale" data-nav="catalog">عروض الجملة</a></li>
+            <li><a href="#/catalog?cat=dairy" data-nav="catalog">الألبان والأجبان</a></li>
+            <li><a href="#/catalog?cat=frozen" data-nav="catalog">المجمدات</a></li>
+            <li><a href="#/catalog?cat=bakery" data-nav="catalog">المخبز والأفران</a></li>
+          </ul>
+        </details>
+
+        <details class="f-col f-acc" open>
+          <summary class="f-title"><span>ساعات العمل والعنوان</span><span class="f-acc-ico" data-icon="chevD"></span></summary>
+          <div class="f-acc-body">
+            <p class="f-hours"><span data-icon="clock"></span> كل يوم: 7:00 صباحاً – 12:00 منتصف الليل</p>
+            <p class="f-hours"><span data-icon="location"></span> طرابلس — شارع المعرض والميناء</p>
+            <p class="f-hours"><span data-icon="scooter"></span> توصيل مجاني للطلبات فوق 25$</p>
+          </div>
+        </details>
+
+        <details class="f-col f-acc" open>
+          <summary class="f-title"><span>طرق الدفع المعتمدة</span><span class="f-acc-ico" data-icon="chevD"></span></summary>
+          <ul class="pay-list">
+            <li><span data-icon="cash"></span> كاش بالليرة اللبنانية</li>
+            <li><span data-icon="cash"></span> كاش بالدولار الأمريكي</li>
+            <li><span data-icon="mobile"></span> ويش موني (Whish Money)</li>
+            <li><span data-icon="card"></span> بطاقة مصرفية عبر POS</li>
+          </ul>
+        </details>
+      </div>
+      <div class="mega-word" id="mega-word" aria-hidden="true"><span>عَ طريقك</span><span class="fill">عَ طريقك</span></div>
+      <div class="footer-bottom">
+        <span>© <span class="tnum" id="year">2026</span> عَ طريقك — طرابلس، لبنان</span>
+        <span>سعر الصرف المعتمد: <b class="tnum">1$ = 89,900 ل.ل.</b></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== MOBILE BOTTOM NAV ======================== -->
+  <nav class="bottom-nav" aria-label="تنقل سريع">
+    <a href="#/" data-nav="home" data-tab="home"><span data-icon="home"></span><span>الرئيسية</span></a>
+    <a href="#/catalog" data-nav="catalog" data-tab="catalog"><span data-icon="grid"></span><span>الأقسام</span></a>
+    <button type="button" class="bn-cart" data-open-cart aria-label="سلة المشتريات"><span class="bn-cart-in"><span data-icon="basket"></span><b class="tnum" id="bn-count">0</b></span></button>
+    <button type="button" data-open-search aria-label="ابحث عن منتج"><span data-icon="search"></span><span>بحث</span></button>
+    <a href="#" id="bn-wa" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><span data-icon="whatsapp"></span><span>واتساب</span></a>
+  </nav>
+
+  <!-- ======================== CART DRAWER / MOBILE BOTTOM SHEET ======================== -->
+  <div class="scrim" id="cart-scrim" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="سلة المشتريات" aria-hidden="true" tabindex="-1">
+    <div class="sheet-handle show-sm" data-swipe-close="cart" aria-hidden="true"><span></span></div>
+    <header class="drawer-head">
+      <h2>سلتك <span class="tnum" id="drawer-count"></span></h2>
+      <button type="button" class="icon-btn" data-close-cart aria-label="إغلاق السلة"><span data-icon="close"></span></button>
+    </header>
+    <div class="free-track" id="free-track">
+      <p id="free-text"></p>
+      <div class="free-road"><span class="free-fill" id="free-fill"></span><span class="free-runner" id="free-runner"></span><span class="free-flag" id="free-flag"></span></div>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+    <footer class="drawer-foot" id="drawer-foot">
+      <div class="coupon-row"><label class="sr-only" for="coupon-input">كود الخصم</label><input id="coupon-input" class="input" placeholder="عندك كود خصم؟" autocomplete="off" /><button type="button" class="btn btn-soft" id="coupon-apply">تطبيق</button></div>
+      <dl class="totals" id="drawer-totals"></dl>
+      <button type="button" class="btn btn-primary btn-block btn-lg" id="checkout-btn" data-magnetic><span>كمّل عالتوصيل</span><span data-icon="arrowL"></span></button>
+    </footer>
+  </aside>
+
+  <!-- ======================== QUICK VIEW ======================== -->
+  <dialog class="modal qv" id="quickview" aria-label="نظرة سريعة على المنتج"></dialog>
+
+  <!-- ======================== CHECKOUT ======================== -->
+  <dialog class="modal sheet" id="checkout" aria-labelledby="checkout-title">
+    <div class="sheet-handle show-sm" data-swipe-close="checkout" aria-hidden="true"><span></span></div>
+    <form class="checkout" id="checkout-form" novalidate>
+      <header class="sheet-head">
+        <h2 id="checkout-title">تفاصيل التوصيل</h2>
+        <button type="button" class="icon-btn" data-close-checkout aria-label="إغلاق"><span data-icon="close"></span></button>
+      </header>
+      <div class="sheet-body">
+        <div class="field"><label for="co-name">الاسم الكريم</label><input class="input" id="co-name" name="name" autocomplete="name" required maxlength="60" placeholder="مثال: أحمد المير" /><p class="field-err" id="co-name-err"></p></div>
+        <div class="field"><label for="co-phone">رقم الهاتف (واتساب)</label><input class="input tnum" id="co-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="03 123 456" required maxlength="20" /><p class="field-err" id="co-phone-err"></p></div>
+        <div class="field"><label for="co-zone">المنطقة</label><select class="input" id="co-zone" name="zone"></select></div>
+        <div class="field"><label for="co-address">العنوان بالتفصيل</label><input class="input" id="co-address" name="address" autocomplete="street-address" required maxlength="140" placeholder="الشارع، البناية، الطابق، علامة مميزة" /><p class="field-err" id="co-address-err"></p></div>
+        <div class="field"><label for="co-notes">ملاحظات (اختياري)</label><textarea class="input" id="co-notes" name="notes" rows="2" maxlength="200" placeholder="مثلاً: دقّ الجرس مرتين"></textarea></div>
+        <fieldset class="field pay-options">
+          <legend>طريقة الدفع</legend>
+          <label class="pay-opt"><input type="radio" name="pay" value="كاش بالليرة اللبنانية" checked /><span><span data-icon="cash"></span>كاش ليرة</span></label>
+          <label class="pay-opt"><input type="radio" name="pay" value="كاش بالدولار" /><span><span data-icon="cash"></span>كاش دولار</span></label>
+          <label class="pay-opt"><input type="radio" name="pay" value="ويش موني (Whish Money)" /><span><span data-icon="mobile"></span>ويش موني</span></label>
+          <label class="pay-opt"><input type="radio" name="pay" value="بطاقة على جهاز POS" /><span><span data-icon="card"></span>بطاقة POS</span></label>
+        </fieldset>
+        <dl class="totals" id="checkout-totals"></dl>
+      </div>
+      <footer class="sheet-foot">
+        <button type="submit" class="btn btn-wa btn-block btn-lg"><span data-icon="whatsapp"></span><span>أرسل الطلب على واتساب</span></button>
+        <p class="fine">رح تنفتح محادثة واتساب فيها كل تفاصيل طلبيتك، بس اضغط «إرسال».</p>
+      </footer>
+    </form>
+  </dialog>
+
+  <!-- ======================== ORDER SUCCESS ======================== -->
+  <dialog class="modal success" id="success" aria-labelledby="success-title">
+    <div class="success-in">
+      <div class="success-art" id="success-art" aria-hidden="true"></div>
+      <h2 id="success-title">طلبيتك على الطريق!</h2>
+      <p class="success-id">رقم الطلب: <b class="tnum" id="success-order-id"></b></p>
+      <ol class="timeline" id="timeline">
+        <li><span data-icon="check"></span><b>استلمنا الطلب</b></li>
+        <li><span data-icon="basket"></span><b>عم نحضّر الغراض</b></li>
+        <li><span data-icon="scooter"></span><b>على الطريق</b></li>
+        <li><span data-icon="home"></span><b>وصلت!</b></li>
+      </ol>
+      <p class="fine" id="success-note"></p>
+      <div class="success-actions">
+        <a class="btn btn-wa" id="success-wa" href="#" target="_blank" rel="noopener"><span data-icon="whatsapp"></span><span>افتح واتساب مرة تانية</span></a>
+        <button type="button" class="btn btn-ghost" data-close-success>كمّل تسوّق</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ======================== COMMAND PALETTE SEARCH ======================== -->
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="البحث" hidden>
+    <div class="palette-in">
+      <div class="palette-bar">
+        <span data-icon="search"></span>
+        <input id="palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="ابحث… حتى لو كتبت غلط، منلاقيها" role="combobox" aria-expanded="true" aria-controls="palette-results" aria-autocomplete="list" />
+        <button type="button" class="icon-btn" data-close-search aria-label="إغلاق البحث"><span data-icon="close"></span></button>
+      </div>
+      <div class="palette-chips" id="palette-chips"></div>
+      <div class="palette-body">
+        <div id="palette-empty-state"></div>
+        <ul class="palette-results" id="palette-results" role="listbox" aria-label="نتائج البحث"></ul>
+      </div>
+      <p class="palette-hint hide-sm"><kbd>↑</kbd><kbd>↓</kbd> للتنقل · <kbd>Enter</kbd> للفتح · <kbd>Esc</kbd> للإغلاق</p>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-label">أضف</span></div>
+  <noscript><p class="noscript">هذا الموقع بحاجة لتفعيل JavaScript لإتمام الطلب. فيك تتصل فينا على +961 6 220 890.</p></noscript>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="src/config.js" defer></script>
+  <script src="src/data/products.js" defer></script>
+  <script src="src/utils/dom.js" defer></script>
+  <script src="src/utils/format.js" defer></script>
+  <script src="src/store.js" defer></script>
+  <script src="src/components/icons.js" defer></script>
+  <script src="src/components/illustrations.js" defer></script>
+  <script src="src/components/product-art.js" defer></script>
+  <script src="src/components/ui.js" defer></script>
+  <script src="src/components/product-card.js" defer></script>
+  <script src="src/components/cart.js" defer></script>
+  <script src="src/components/quickview.js" defer></script>
+  <script src="src/components/search.js" defer></script>
+  <script src="src/components/checkout.js" defer></script>
+  <script src="src/sections/hero.js" defer></script>
+  <script src="src/sections/home.js" defer></script>
+  <script src="src/sections/catalog.js" defer></script>
+  <script src="src/motion.js" defer></script>
+  <script src="src/router.js" defer></script>
+  <script src="src/main.js" defer></script>
+</body>
+</html>

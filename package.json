@@ -1,0 +1,15 @@
+{
+  "name": "atareeqak-supermarket",
+  "version": "2.0.0",
+  "private": true,
+  "description": "عَ طريقك — Fast-delivery supermarket in Tripoli & North Lebanon (RTL Arabic)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
+
